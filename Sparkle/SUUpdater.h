@@ -66,6 +66,16 @@ SU_EXPORT @interface SUUpdater : NSObject
 - (IBAction)checkForUpdates:(id)sender;
 
 /*!
+ Explicitly checks for updates and displays a progress dialog while doing so.
+
+ This method is intended to be used with a given appcast update information
+ (SUFeedUrl will not be used to download the appcast).
+
+ This will find updates that the given appcast has opted into skipping.
+*/
+- (void)checkForUpdatesFromAppcast:(SUAppcast*) appcast;
+
+/*!
  The menu item validation used for the -checkForUpdates: action
  */
 - (BOOL)validateMenuItem:(NSMenuItem *)menuItem;

@@ -15,6 +15,7 @@
 #import "SUUpdatePermissionPrompt.h"
 
 #import "SUAutomaticUpdateDriver.h"
+#import "SUAppcastUpdateDriver.h"
 #import "SUProbingUpdateDriver.h"
 #import "SUUserInitiatedUpdateDriver.h"
 #import "SUScheduledUpdateDriver.h"
@@ -353,6 +354,19 @@ static NSString *const SUUpdaterDefaultsObservationContext = @"SUUpdaterDefaults
     }
 
     [self checkForUpdatesWithDriver:[[SUUserInitiatedUpdateDriver alloc] initWithUpdater:self]];
+}
+
+- (void)checkForUpdatesFromAppcast:(SUAppcast*) appcast
+{
+    if (self.driver && [self.driver isInterruptible]) {
+        if ([self.driver resumeUpdateInteractively]) {
+            return;
+        }
+        [self.driver abortUpdate];
+    }
+
+    SUAppcastUpdateDriver* appCastUpdateDriver = [[SUAppcastUpdateDriver alloc] initWithUpdaterAndAppcast:self:appcast];
+    [self checkForUpdatesWithDriver:appCastUpdateDriver];
 }
 
 - (void)checkForUpdateInformation

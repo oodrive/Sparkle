@@ -100,6 +100,12 @@
     [self.download startTemporaryDownloadWithRequest:urlRequest];
 }
 
+- (instancetype)initWithArray:(NSArray *)array
+{
+    self.items = array;
+    return self;
+}
+
 - (void)downloaderDidSetDestinationName:(NSString *)__unused destinationName temporaryDirectory:(NSString *)__unused temporaryDirectory
 {
 }

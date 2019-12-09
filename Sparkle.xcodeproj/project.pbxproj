@@ -277,6 +277,7 @@
 		767B61AE1972D488004E0C3C /* SUGuidedPackageInstaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 767B61AB1972D488004E0C3C /* SUGuidedPackageInstaller.m */; };
 		A5BF4F1D1BC7668B007A052A /* SUTestWebServer.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BF4F1C1BC7668B007A052A /* SUTestWebServer.m */; };
 		C23E885B1BE7B24F0050BB73 /* SparkleTestCodeSignApp.enc.dmg in Resources */ = {isa = PBXBuildFile; fileRef = C23E88591BE7AF890050BB73 /* SparkleTestCodeSignApp.enc.dmg */; };
+		D92DD67C23995A7E00F8B25E /* SUAppCastUpdateDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = D92DD67B23995A7E00F8B25E /* SUAppCastUpdateDriver.m */; };
 		E1545EC51E1D7E0200FAECE8 /* SUTouchBarButtonGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = E1545EC31E1D7E0200FAECE8 /* SUTouchBarButtonGroup.h */; };
 		E1545EC61E1D7E0200FAECE8 /* SUTouchBarButtonGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = E1545EC41E1D7E0200FAECE8 /* SUTouchBarButtonGroup.m */; };
 		E1D4DDF921C1C5F8003D32E7 /* DarkAqua.css in Resources */ = {isa = PBXBuildFile; fileRef = E1D4DDF821C1C5F8003D32E7 /* DarkAqua.css */; };
@@ -949,6 +950,8 @@
 		A5BF4F1B1BC7668B007A052A /* SUTestWebServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUTestWebServer.h; sourceTree = "<group>"; };
 		A5BF4F1C1BC7668B007A052A /* SUTestWebServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUTestWebServer.m; sourceTree = "<group>"; };
 		C23E88591BE7AF890050BB73 /* SparkleTestCodeSignApp.enc.dmg */ = {isa = PBXFileReference; lastKnownFileType = file; path = SparkleTestCodeSignApp.enc.dmg; sourceTree = "<group>"; };
+		D92DD67B23995A7E00F8B25E /* SUAppCastUpdateDriver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SUAppCastUpdateDriver.m; sourceTree = "<group>"; };
+		D92DD67D23995AB800F8B25E /* SUAppcastUpdateDriver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SUAppcastUpdateDriver.h; sourceTree = "<group>"; };
 		E1545EC31E1D7E0200FAECE8 /* SUTouchBarButtonGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUTouchBarButtonGroup.h; sourceTree = "<group>"; };
 		E1545EC41E1D7E0200FAECE8 /* SUTouchBarButtonGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUTouchBarButtonGroup.m; sourceTree = "<group>"; };
 		E19CA4901E2E7E4D009D4D18 /* SUTouchBarForwardDeclarations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SUTouchBarForwardDeclarations.h; sourceTree = "<group>"; };
@@ -1556,6 +1559,8 @@
 				610134720DD250470049ACDF /* SUUpdateDriver.m */,
 				61A354530DF113C70076ECB1 /* SUUserInitiatedUpdateDriver.h */,
 				61A354540DF113C70076ECB1 /* SUUserInitiatedUpdateDriver.m */,
+				D92DD67D23995AB800F8B25E /* SUAppcastUpdateDriver.h */,
+				D92DD67B23995A7E00F8B25E /* SUAppCastUpdateDriver.m */,
 			);
 			name = Drivers;
 			sourceTree = "<group>";
@@ -2404,6 +2409,7 @@
 				618FA5230DAE8E8A0026945C /* SUPackageInstaller.m in Sources */,
 				61D85D6D0E10B2ED00F9B4A9 /* SUPipedUnarchiver.m in Sources */,
 				618FA5060DAE8AB80026945C /* SUPlainInstaller.m in Sources */,
+				D92DD67C23995A7E00F8B25E /* SUAppCastUpdateDriver.m in Sources */,
 				6101347C0DD2541A0049ACDF /* SUProbingUpdateDriver.m in Sources */,
 				61B93C0A0DD112FF00DCD2F8 /* SUScheduledUpdateDriver.m in Sources */,
 				5AF04878214D2E5F00B5789F /* SUSignatures.m in Sources */,

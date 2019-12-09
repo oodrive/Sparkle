@@ -26,6 +26,7 @@ SU_EXPORT @interface SUAppcast : NSObject
 
 - (void)fetchAppcastFromURL:(NSURL *)url inBackground:(BOOL)bg completionBlock:(void (^)(NSError *_Nullable))err;
 - (SUAppcast *)copyWithoutDeltaUpdates;
+- (instancetype)initWithArray:(NSArray *)array;
 
 @property (readonly, copy, nullable) NSArray *items;
 @end
