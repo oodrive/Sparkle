@@ -167,6 +167,17 @@
             
             itemsCopied += 1.0;
             [notifier notifyProgress:0.5 + itemsCopied/(totalItems*2.0)];
+            
+            if ([manager fileExistsAtPath:toPath])
+            {
+                SULog(SULogLevelDefault, @"removeItemAtPath:%@", toPath);
+                
+                if (![manager removeItemAtPath:toPath error:&error])
+                {
+                    goto reportError;
+                }
+            }
+            
             SULog(SULogLevelDefault, @"copyItemAtPath:%@ toPath:%@", fromPath, toPath);
 
 			if (![manager copyItemAtPath:fromPath toPath:toPath error:&error])
